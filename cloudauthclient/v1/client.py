@@ -21,7 +21,10 @@ from datetime import datetime
 from httplib import OK as HTTP_OK
 
 import oauth2 as oauth
-import simplejson as json
+try:
+    import simplejson as json
+except ImportError:
+    import json
 
 import cloudauthclient.exceptions as exc
 from cloudauthclient import client
