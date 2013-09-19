@@ -15,6 +15,7 @@
 # under the License.
 #
 
+
 class ClientException(Exception):
     """Base exception class for all exceptions this library raises"""
     pass

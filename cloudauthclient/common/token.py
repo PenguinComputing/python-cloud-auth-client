@@ -15,6 +15,7 @@
 # under the License.
 #
 
+
 class Token(object):
     def __init__(self, token_str, expires_at):
         self.token = token_str

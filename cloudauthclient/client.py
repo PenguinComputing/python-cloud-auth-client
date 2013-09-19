@@ -19,7 +19,7 @@ import logging
 
 import requests
 
-import exceptions as exc
+import cloudauthclient.exceptions as exc
 
 LOG = logging.getLogger(__name__)
 

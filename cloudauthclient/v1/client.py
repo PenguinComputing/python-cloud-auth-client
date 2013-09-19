@@ -61,9 +61,9 @@ class Client(client.HTTPClient):
             consumer = oauth.Consumer(
                 key=self.api_key,
                 secret=self.api_secret)
-            client = oauth.Client(consumer)
+            oauth_client = oauth.Client(consumer)
             try:
-                resp, content = client.request(url, "GET")
+                resp, content = oauth_client.request(url, "GET")
             except Exception as e:
                 LOG.critical(e)
                 raise exc.AuthenticationError()
