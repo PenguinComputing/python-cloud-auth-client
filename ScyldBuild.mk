@@ -15,7 +15,7 @@ python-cloud-auth-client_TARGETS += $(call add_targets,python-cloud-auth-client)
 BUILD_TARGETS += $(python-cloud-auth-client_TARGETS)
 python-cloud-auth-client_INSTALL_RPMS := $(call install_some_rpms,python-cloud-auth-client,'debuginfo')
 
-scyld-python-cloud-auth-client_VERSION := 0.1.1
+scyld-python-cloud-auth-client_VERSION := 0.1.2
 
 $(RPM_SOURCE_DIR)/python-cloud-auth-client-$(scyld-python-cloud-auth-client_VERSION).tar.gz: $(shell find python-cloud-auth-client -print -type f)
 	( cd python-cloud-auth-client ; tar zcf $@ *)
