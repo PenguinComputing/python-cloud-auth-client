@@ -35,7 +35,7 @@ class HTTPClient(object):
         self.api_secret = api_secret
 
         if self.endpoint is None:
-            raise(exc.NoEndpointError("No endpoint given for CloudAuth"))
+            raise exc.NoEndpointError("No endpoint given for CloudAuth")
 
         self.http = requests.Session()
 
