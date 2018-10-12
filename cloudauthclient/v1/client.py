@@ -73,7 +73,7 @@ class Client(client.HTTPClient):
                     LOG.critical("Error returned from CloudAuth: %s",
                                  resp['status'])
                     raise exc.AuthenticationError()
-            result = json.loads(content)
+            result = json.loads(content.decode('utf-8'))
             try:
                 parsed_time = datetime.strptime(result['expires_at_utc'][:19],
                                                 "%Y-%m-%dT%H:%M:%S")
