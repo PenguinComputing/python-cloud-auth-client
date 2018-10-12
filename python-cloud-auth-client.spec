@@ -1,7 +1,7 @@
 %define build_number %([ -e /build/.scyld-build-number ] && cat /build/.scyld-build-number || echo `date +"%y%m%d.%H.%M"`)
 
 %define name 			python-cloud-auth-client
-%define version 		0.1.1
+%define version 		0.1.2
 %define scyld_python_prefix     /opt/scyld/python/2.6.5
 %define scyld_python_site_packages %{scyld_python_prefix}/lib/python2.6/site-packages
 

@@ -18,7 +18,6 @@
 import logging
 from threading import Lock
 from datetime import datetime
-from httplib import OK as HTTP_OK
 
 import oauth2 as oauth
 try:
@@ -33,6 +32,8 @@ from cloudauthclient.common.token import Token
 LOG = logging.getLogger(__name__)
 _TOKEN = None
 _TOKEN_LOCK = Lock()
+
+HTTP_OK = 200
 
 
 class Client(client.HTTPClient):

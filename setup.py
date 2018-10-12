@@ -1,4 +1,3 @@
-import os
 import sys
 
 from setuptools import setup, find_packages
@@ -14,7 +13,7 @@ if pyversion < (2, 6):
 
 setup(
     name="python-cloud-auth-client",
-    version="0.1.1",
+    version="0.1.2",
     description="Client library for Scyld Cloud Auth API",
     classifiers=[
         "Programming Language :: Python",
@@ -26,6 +25,6 @@ setup(
     maintainer="Penguin Computing, Inc.",
     maintainer_email="support@penguincomputing.com",
     url="http://www.penguincomputing.com",
-    packages=find_packages(exclude=['tests','tests.*']),
+    packages=find_packages(exclude=['tests', 'tests.*']),
     install_requires=requires
 )
